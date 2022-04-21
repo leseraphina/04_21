@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 // component
 import AddApointment from './component/AddApointment';
+import Search from './component/Search'
 
 // source
 import { BiArchive } from "react-icons/bi";
@@ -15,6 +16,7 @@ function App(){
          예약 시스템 
       </h3>
       <AddApointment />
+      <Search />
       <div id="list">
         <ul>
           <li>반복문</li>
