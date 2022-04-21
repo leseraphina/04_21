@@ -1,14 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 // component
+import AddApointment from './component/AddApointment';
 
 // source
+import { BiArchive } from "react-icons/bi";
 import './index.css'
 
 function App(){
   return (
     <article>
-      welcome
+      <h3>
+        <BiArchive style={{color:'#d47776'}}/> 
+         예약 시스템 
+      </h3>
+      <AddApointment />
+      <div id="list">
+        <ul>
+          <li>반복문</li>
+        </ul>
+      </div>
     </article>
   )
 }
