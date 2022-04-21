@@ -1,15 +1,18 @@
 import { BiTrash } from 'react-icons/bi'
 // for-> htmlFor value-> defaultValue  class-> className
-function AddInfo(){
+function AddInfo({appointment}){
   return (
     <li>
       <dl>
-        <dt>이름</dt>
+        <dt>{appointment.petName}</dt>
         <dd className="owner">
           <dfn>예약자명 :</dfn>
+          {appointment.ownerName}
         </dd>
-        <dd className="desc">설명</dd>
-        <dd className="date">날짜</dd>
+        <dd className="desc">
+          {appointment.aptNotes}</dd>
+        <dd className="date">
+          {appointment.aptDate}</dd>
       </dl>
       <p>
         <button><BiTrash /></button>

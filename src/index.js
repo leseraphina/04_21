@@ -8,7 +8,7 @@ import AddInfo from './component/AddInfo'
 // source
 import { BiArchive } from "react-icons/bi";
 import './index.css'
-
+import appointData from './data.json'
 
 
 function App(){
@@ -22,7 +22,14 @@ function App(){
       <Search />
       <div id="list">
         <ul>
-          <AddInfo />
+        {
+        appointData.map( item => (
+          <AddInfo 
+            key={item.id}
+            appointment = {item}
+          />
+        ))
+        }
         </ul>
       </div>
     </article>
